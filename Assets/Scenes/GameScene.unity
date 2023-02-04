@@ -191,6 +191,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7610729581979577012, guid: 0285259afc3011a418522efd9cf34208,
+        type: 3}
+      propertyPath: kitchenObjectScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: eac1738b3a92b0241ab0aa596e0f7c7b,
+        type: 2}
+    - target: {fileID: 8212613054062118391, guid: 0285259afc3011a418522efd9cf34208,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0285259afc3011a418522efd9cf34208, type: 3}
@@ -519,6 +530,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ClearCounter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610729581979577012, guid: 0285259afc3011a418522efd9cf34208,
+        type: 3}
+      propertyPath: kitchenObjectScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 01af7c0b5bca47e47a1cf9967ffa1397,
+        type: 2}
+    - target: {fileID: 8212613054062118391, guid: 0285259afc3011a418522efd9cf34208,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -869,6 +891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d14a2a437921d429a7582e498d44e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kitchenObjectScriptableObject: {fileID: 0}
+  counterTopPoint: {fileID: 0}
 --- !u!1001 &2754993855201931567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -937,6 +961,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 7610729581979577012, guid: 0285259afc3011a418522efd9cf34208,
+        type: 3}
+      propertyPath: kitchenObjectScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 01af7c0b5bca47e47a1cf9967ffa1397,
+        type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0285259afc3011a418522efd9cf34208, type: 3}
