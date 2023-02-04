@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ClearCounter : MonoBehaviour
+public class ClearCounter : MonoBehaviour, IKitchenObjectParent
 {
 
     [SerializeField] private KitchenObjectScriptableObject kitchenObjectScriptableObject;
@@ -11,16 +11,16 @@ public class ClearCounter : MonoBehaviour
 
     private KitchenObject _kitchenObject;
     
-    public void Interact()
+    public void Interact(Player player)
     {
         if (_kitchenObject == null)
         {
             var kitchenObjectTransform = Instantiate(kitchenObjectScriptableObject.prefab, counterTopPoint);
-            kitchenObjectTransform.GetComponent<KitchenObject>().SetClearCounter(this);
+            kitchenObjectTransform.GetComponent<KitchenObject>().SetKitchenObjectParent(this);
         }
         else
         {
-            Debug.Log(_kitchenObject.GetClearCounter());
+            _kitchenObject.SetKitchenObjectParent(player);
         }
     }
 
@@ -33,7 +33,7 @@ public class ClearCounter : MonoBehaviour
     {
         _kitchenObject = kitchenObject;
     }
-
+        
     public KitchenObject GetKitchenObject()
     {
         return _kitchenObject;
