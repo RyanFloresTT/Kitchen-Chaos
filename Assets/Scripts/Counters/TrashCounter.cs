@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Counters;
-using UnityEngine;
 
 public class TrashCounter : BaseCounter
 {

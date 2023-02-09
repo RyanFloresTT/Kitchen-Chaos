@@ -13,7 +13,6 @@ namespace Counters
         }    
         public virtual void AlternateInteract(Player player)
         {
-            Debug.LogError("BaseCounter.Interact();");
         }    
         public Transform GetKitchenObjectFollowTransform()
         {

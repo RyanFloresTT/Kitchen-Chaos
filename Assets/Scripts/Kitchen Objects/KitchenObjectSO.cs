@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class KitchenObjectScriptableObject :  ScriptableObject
+public class KitchenObjectSO :  ScriptableObject
 {
     public Transform prefab;
     public Sprite sprite;

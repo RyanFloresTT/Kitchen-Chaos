@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class KitchenObject : MonoBehaviour
 {
 
-    [SerializeField] private KitchenObjectScriptableObject kitchenObjectScriptableObject;
+    [FormerlySerializedAs("kitchenObjectScriptableObject")] [SerializeField] private KitchenObjectSO kitchenObjectSO;
 
     private IKitchenObjectParent _kitchenObjectParent;
 
-    public KitchenObjectScriptableObject GetKitchenObjectScriptableObject()
+    public KitchenObjectSO GetKitchenObjectSO()
     {
-        return kitchenObjectScriptableObject;
+        return kitchenObjectSO;
     }
 
     public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent)
@@ -44,10 +45,10 @@ public class KitchenObject : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public static KitchenObject SpawnKitchenObject(KitchenObjectScriptableObject kitchenObjectScriptableObject,
+    public static KitchenObject SpawnKitchenObject(KitchenObjectSO kitchenObjectSO,
         IKitchenObjectParent kitchenObjectParent)
     {
-        var kitchenObjectTransform = Instantiate(kitchenObjectScriptableObject.prefab);
+        var kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab);
         var kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
         kitchenObject.SetKitchenObjectParent(kitchenObjectParent);
         return kitchenObject;

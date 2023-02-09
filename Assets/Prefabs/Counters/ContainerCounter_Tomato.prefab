@@ -10,19 +10,30 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 605893724015083878, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 01af7c0b5bca47e47a1cf9967ffa1397,
+        type: 2}
+    - target: {fileID: 605893724015083878, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
       propertyPath: kitchenObjectScriptableObject
       value: 
       objectReference: {fileID: 11400000, guid: 01af7c0b5bca47e47a1cf9967ffa1397,
         type: 2}
-    - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+    - target: {fileID: 3074148021315785482, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
-      propertyPath: m_RootOrder
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
@@ -32,7 +43,7 @@ PrefabInstance:
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
@@ -42,7 +53,7 @@ PrefabInstance:
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
@@ -52,7 +63,7 @@ PrefabInstance:
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
@@ -72,7 +83,22 @@ PrefabInstance:
     - target: {fileID: 3210618312924498726, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
       propertyPath: m_Name
-      value: ContainerCounter Variant_Tomato
+      value: ContainerCounter_Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396619609857595628, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770534663976167790, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867599646009689831, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

@@ -1,10 +1,11 @@
 using Counters;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ClearCounter : BaseCounter
 {
 
-    [SerializeField] private KitchenObjectScriptableObject kitchenObjectScriptableObject;
+    [FormerlySerializedAs("kitchenObjectScriptableObject")] [SerializeField] private KitchenObjectSO kitchenObjectSO;
     
     public override void Interact(Player player)
     {

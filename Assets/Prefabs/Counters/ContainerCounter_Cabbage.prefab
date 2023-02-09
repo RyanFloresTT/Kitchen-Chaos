@@ -10,14 +10,25 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 605893724015083878, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 3b8308ce480aa604bbd49a00eea2511a,
+        type: 2}
+    - target: {fileID: 605893724015083878, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
       propertyPath: kitchenObjectScriptableObject
       value: 
       objectReference: {fileID: 11400000, guid: 3b8308ce480aa604bbd49a00eea2511a,
         type: 2}
+    - target: {fileID: 3074148021315785482, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3210618312924498724, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
@@ -73,6 +84,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ContainerCounter_Cabbage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396619609857595628, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770534663976167790, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867599646009689831, guid: 80f06d2ae9c373f4a8255089359fcbb9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8448845974539893851, guid: 80f06d2ae9c373f4a8255089359fcbb9,
         type: 3}
