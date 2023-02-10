@@ -234,9 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95ad27e92a20cf4083e9a75f036d7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterTopPoint: {fileID: 0}
-  plateVisualPrefab: {fileID: 0}
-  platesCounter: {fileID: 0}
+  counterTopPoint: {fileID: 4252757229354736649}
+  plateVisualPrefab: {fileID: 2062108846459766485, guid: 1d59739ce2760f341b419448afb2f1a3,
+    type: 3}
+  platesCounter: {fileID: 5480351380764923737}
 --- !u!1001 &7468430839576690834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,6 +342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 4252757229354736649}
+  plateKitchenObjectSO: {fileID: 11400000, guid: 2c65c1fedd4fb1c4f8bf9b730481111a,
+    type: 2}
 --- !u!4 &4728364095726086291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2754993855458469889, guid: d5968dc9f6597fd4ba5ebb73818eadb8,
