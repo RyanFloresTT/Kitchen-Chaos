@@ -8,7 +8,8 @@ using UnityEngine.XR;
 public class Player : MonoBehaviour, IKitchenObjectParent
 {
     public static Player Instance { get; private set; }
-    
+
+    public event EventHandler OnItemPickup;
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
 
     public class OnSelectedCounterChangedEventArgs : EventArgs
@@ -162,6 +163,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     public void SetKitchenObject(KitchenObject kitchenObject)
     {
         _kitchenObject = kitchenObject;
+        if (kitchenObject == null) return;
+        OnItemPickup?.Invoke(this, EventArgs.Empty);
     }
         
     public KitchenObject GetKitchenObject()
