@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Video;
 
 public class GameInput : MonoBehaviour
 {
+    public static GameInput Instance;
     public event EventHandler OnInteractAction;
     public event EventHandler OnAlternateInteractAction;
+    public event EventHandler OnPauseAction;
     private PlayerInputActions _playerInputActions;
     private void Awake()
     {
@@ -14,6 +17,14 @@ public class GameInput : MonoBehaviour
 
         _playerInputActions.Player.Interact.performed += InteractPerformed;
         _playerInputActions.Player.InteractAlternate.performed += InteractAlternatePerformed;
+        _playerInputActions.Player.Pause.performed += PauseOnperformed;
+
+        Instance = this;
+    }
+
+    private void PauseOnperformed(InputAction.CallbackContext obj)
+    {
+        OnPauseAction?.Invoke(this, EventArgs.Empty);
     }
 
     private void InteractAlternatePerformed(InputAction.CallbackContext obj)
